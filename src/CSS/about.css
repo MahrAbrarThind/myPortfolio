@@ -1,0 +1,74 @@
+.aboutContainer{
+    padding-top: 100px;
+    /* height: 100vh; */
+    width: 100%;
+    /* background-color: red; */
+}
+
+.aboutHeading{
+    font-size: 50px;    
+    color: white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.innerContainer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 50px;
+    gap: 80px;
+    width: 100%;
+    /* background-color: black; */
+}
+
+
+
+
+.animate__duration-1s{
+    animation-duration: 1s;
+}
+.animate__duration-2s {
+    animation-duration: 2s;
+  }
+  
+  .animate__duration-3s {
+    animation-duration: 3s;
+  }
+  
+
+
+
+
+
+.aboutIntro{
+    width: 50%;
+}
+
+.introHeading{
+    font-size: 35px;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.introText{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: #d1d1d1;
+    padding: 7px;
+}
+
+
+
+
+
+
+
+
