@@ -51,7 +51,7 @@
   background: none;
   border: none;
   border-bottom: 2px solid #171818;
-  color: #ffffff;
+  color: black;
   font-size: 16px;
 }
 
@@ -70,13 +70,14 @@
 .form-group textarea:valid+label {
   top: -20px;
   left: 0;
-  color: #00d1ff;
+  /* color: #00d1ff; */
+  color:black;
   font-size: 12px;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #0d0d0d;
   outline: none;
 }
 

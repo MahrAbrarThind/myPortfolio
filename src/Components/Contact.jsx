@@ -1,14 +1,16 @@
 import React from 'react';
 import 'animate.css/animate.min.css'; // Import animate.css
 import useIntersectionObserver from './UseIntersectionObserver'; // Import the custom hook
- 
+
+import { toast } from 'react-toastify';
+
 
 const Contact = () => {
   const [contactRef, isContactVisible] = useIntersectionObserver({ threshold: 1 });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Form submitted!');
+    toast.success("Message Sent Successfully");
   };
 
   return (
