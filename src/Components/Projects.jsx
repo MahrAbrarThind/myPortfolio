@@ -34,14 +34,19 @@ const Projects = () => {
     },
   ];
 
-  const [refs, visibility] = useProjectVisibility(projects.length, { threshold: 1 });
+  const [refs, visibility] = useProjectVisibility(projects.length + 1, { threshold: 0.5 });
 
   return (
     <>
       <div id="projects" className="projectsContainer">
-
-        <h1 className='projectsHeading'>Check Out My Work</h1>
-        <div  className="timeline-container">
+        <h1 
+          ref={el => (refs.current[projects.length] = el)}
+          className={`projectsHeading animate__animated ${visibility[projects.length] ? 'animate__duration-3s animate__zoomIn' : ''}`}
+          style={{ opacity: visibility[projects.length] ? 1 : 0 }}
+        >
+          Check Out My Work
+        </h1>
+        <div className="timeline-container">
           {projects.map((project, index) => {
             const animationClass = project.side === 'left' ? 'animate__slideInLeft' : 'animate__slideInRight';
             const isVisible = visibility[index];
@@ -69,7 +74,6 @@ const Projects = () => {
           <div className="timeline-line"></div>
         </div>
       </div>
-
     </>
   );
 };

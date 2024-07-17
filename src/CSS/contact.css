@@ -10,7 +10,7 @@
 .contact-form {
   background: #1e1e2a;
   /* background: #1a1a21; */
-  background-color: #f1f1f1;
+  background-color: #d6cece;
   padding: 60px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 209, 255, 0.5);
@@ -85,7 +85,7 @@
   margin-top: 20px;
   border: 2px solid black;
   color: black;
-  padding: 15px 30px;
+  padding: 10px 30px;
   cursor: pointer;
   border-radius: 15px;
   transition:all  0.7s;

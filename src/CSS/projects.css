@@ -1,24 +1,23 @@
 .projectsContainer{
-padding-top: 100px;
+  padding-top: 100px;
 }
+
 .projectsHeading{
-   padding: 50px 10px; 
-   /* margin: 50px 10px; */
+  padding: 50px 10px; 
   font-size: 45px;   
-  text-align:center;
+  text-align: center;
   font-weight: 900; 
   color: white;
   font-family: Arial, sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
-
 }
+
 .timeline-container {
   position: relative;
   max-width: 1200px;
   margin: auto;
   padding: 40px 0;
-  /* overflow: hidden; */
 }
 
 .timeline-line {
@@ -42,7 +41,21 @@ padding-top: 100px;
   background-color: #00d1ff;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 209, 255, 0.7);
-  border: 2px solid #fff; /* Optional: adds a white border around the circle */
+  border: 2px solid #fff;
+}
+
+.timeline-line::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background-color: #00d1ff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 209, 255, 0.7);
+  border: 2px solid #fff;
 }
 
 .timeline-card {
@@ -79,7 +92,6 @@ padding-top: 100px;
   left: -30px;
   border-width: 20px 20px 20px 0;
   border-color: transparent #00d1ff transparent transparent;
-  
 }
 
 .timeline-card.left::before {
@@ -147,7 +159,6 @@ padding-top: 100px;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  /* margin-bottom: 10px; */
 }
 
 .card-back p, .card-back span {

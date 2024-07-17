@@ -19,7 +19,13 @@ const Contact = () => {
         ref={contactRef}
         style={{ opacity: isContactVisible ? 1 : 0 }}
       >
-        <h2>Contact Me</h2>
+        <h2
+        
+        className={`animate__animated ${isContactVisible ? 'animate__duration-3s animate__zoomIn' : ''}`}
+        ref={contactRef}
+        style={{ opacity: isContactVisible ? 1 : 0 }}
+
+        >Contact Me</h2>
         <div className="form-group">
           <input type="text" id="name" name="name" required />
           <label htmlFor="name">Name</label>
