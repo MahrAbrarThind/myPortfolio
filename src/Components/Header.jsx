@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Header = () => {
@@ -11,6 +11,7 @@ const Header = () => {
                         spy={true}
                         smooth={true}
                         duration={500}
+                        activeClass="active"
                     >
                         <img src="logo1.png" alt="Logo" />
                     </Link>
@@ -22,6 +23,7 @@ const Header = () => {
                         spy={true}
                         smooth={true}
                         duration={500}
+                        activeClass="active"
                     >
                         Home
                     </Link>
@@ -31,6 +33,7 @@ const Header = () => {
                         spy={true}
                         smooth={true}
                         duration={500}
+                        activeClass="active"
                     >
                         About
                     </Link>
@@ -40,6 +43,7 @@ const Header = () => {
                         spy={true}
                         smooth={true}
                         duration={500}
+                        activeClass="active"
                     >
                         Projects
                     </Link>
@@ -49,13 +53,14 @@ const Header = () => {
                         spy={true}
                         smooth={true}
                         duration={500}
+                        activeClass="active"
                     >
                         Contact
                     </Link>
                 </div>
             </div>
         </>
-    )
+    );
 }
 
-export default Header
+export default Header;

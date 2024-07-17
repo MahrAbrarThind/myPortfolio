@@ -9,8 +9,9 @@
     
     width: 100%;
     /* background-color: #060b2c; */
-    background-color: #16023b;
+    /* background-color: #16023b; */
     /* background-color: #11172d; */
+    background-color: black;
     display: flex;
     gap: 300px;
     align-items: center;
@@ -87,4 +88,20 @@
     border: none;
     /* color: #ff9f0e; */
     color: #20ec09;
+}
+
+
+
+
+.link.active,
+.link:hover {
+    border: none;
+    /* color: #ff9f0e; */
+    color: #20ec09;
+}
+
+.link.active::after,
+.link:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
 }

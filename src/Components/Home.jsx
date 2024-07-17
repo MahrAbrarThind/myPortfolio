@@ -42,16 +42,17 @@ const Home = () => {
         <div className="textContainer">
           <Typewriter words={helloWords} className="hello" />
           <p className='name'>I'm Abrar Hussain</p>
-          <Typewriter words={skillWords} className="skill" />
+          {/* <Typewriter words={skillWords} className="skill" /> */}
+          <p className="skill">A Web Developer</p>
 
           <div className="buttons">
-            <button className="download-button" onClick={handleDownload}>
+            <button className="download-button button" onClick={handleDownload}>
               <span>
                 <i className="fa-solid fa-download"></i> CV
               </span>
             </button>
 
-            <button className="eye-button" onClick={handleView}>
+            <button className="eye-button button" onClick={handleView}>
               <span>
                 <i className="fa-solid fa-eye"></i> CV
               </span>

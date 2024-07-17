@@ -7,23 +7,30 @@ const Projects = () => {
     {
       title: 'Ride Reserve',
       side: 'left',
-      img: 'eduspark.png',
-      description: "React Js I Will Maintain Existing React Systems, Including Fixing Bugs, Design And Develop New Custom Components To Meet Project Requirements,Install And Configure Server Environments For React Deployments.",
-      date: "12 July 2023"
+      img: 'rideReserver.png',
+      description: "A comprehensive ticket booking app where admins can add buses, fares, and routes, while users can check fares, purchase tickets, and cancel bookings also.",
+      date: " April 2023"
     },
     {
       title: 'Edu Spark',
       side: 'right',
       img: 'eduspark.png',
-      description: "React Js I Will Maintain Existing React Systems, Including Fixing Bugs, Design And Develop New Custom Components To Meet Project Requirements,Install And Configure Server Environments For React Deployments.",
-      date: "12 July 2023"
+      description: "A dynamic courses platform where admins can add, update, and delete courses and videos, while users can purchase and watch course content.",
+      date: " June 2024"
     },
     {
       title: 'Pen Pulse',
       side: 'left',
-      img: 'eduspark.png',
-      description: "React Js I Will Maintain Existing React Systems, Including Fixing Bugs, Design And Develop New Custom Components To Meet Project Requirements,Install And Configure Server Environments For React Deployments.",
-      date: "12 July 2023"
+      img: 'blogging website.png',
+      description: "A dynamic blogging platform where users can read, publish, delete, and discover a wide range of blogs, fostering a vibrant community of writers and readers.",
+      date: "September 2023"
+    },
+    {
+      title: 'Weather Website',
+      side: 'right',
+      img: 'weather website.png',
+      description: "An intuitive weather platform where users can easily discover real-time weather updates for their city, ensuring they are always prepared for the day ahead.",
+      date: "December 2023"
     },
   ];
 
@@ -31,35 +38,38 @@ const Projects = () => {
 
   return (
     <>
-      <h1 className='projectsHeading'>Check Out My Work</h1>
+      <div id="projects" className="projectsContainer">
 
-      <div className="timeline-container">
-        {projects.map((project, index) => {
-          const animationClass = project.side === 'left' ? 'animate__slideInLeft' : 'animate__slideInRight';
-          const isVisible = visibility[index];
+        <h1 className='projectsHeading'>Check Out My Work</h1>
+        <div  className="timeline-container">
+          {projects.map((project, index) => {
+            const animationClass = project.side === 'left' ? 'animate__slideInLeft' : 'animate__slideInRight';
+            const isVisible = visibility[index];
 
-          return (
-            <div
-              key={index}
-              ref={el => (refs.current[index] = el)}
-              className={`timeline-card ${project.side} animate__animated ${isVisible ? animationClass : ''}`}
-              style={{ opacity: isVisible ? 1 : 0 }}
-            >
-              <div className="timeline-content">
-                <div className="card-front">
-                  <img src={project.img} alt={project.title} />
-                  <h3>{project.title}</h3>
-                </div>
-                <div className="card-back">
-                  <p>{project.description}</p>
-                  <span>{project.date}</span>
+            return (
+              <div
+                key={index}
+                ref={el => (refs.current[index] = el)}
+                className={`timeline-card ${project.side} animate__animated ${isVisible ? animationClass : ''}`}
+                style={{ opacity: isVisible ? 1 : 0 }}
+              >
+                <div className="timeline-content">
+                  <div className="card-front">
+                    <img src={project.img} alt={project.title} />
+                    <h3>{project.title}</h3>
+                  </div>
+                  <div className="card-back">
+                    <p>{project.description}</p>
+                    <span>{project.date}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
-        <div className="timeline-line"></div>
+            );
+          })}
+          <div className="timeline-line"></div>
+        </div>
       </div>
+
     </>
   );
 };

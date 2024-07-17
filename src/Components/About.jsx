@@ -1,5 +1,6 @@
 import React from 'react';
 import 'animate.css/animate.min.css'; // Import animate.css
+import { Link, animateScroll as scroll } from 'react-scroll';
 import useIntersectionObserver from './UseIntersectionObserver'; // Import the custom hook
 
 const About = () => {
@@ -33,7 +34,7 @@ const About = () => {
             ref={introText1Ref}
             className={`introText animate__animated ${isIntroText1Visible ? 'animate__duration-2s animate__fadeInUpBig' : 'hidden'}`}
           >
-            I'm a passionate MERN Stack developer, specializing in building and managing the front-end of modern
+            I'm a passionate Web Developer, specializing in building and managing modern
             web applications.
           </p>
           <br />
@@ -49,7 +50,20 @@ const About = () => {
             ref={introText3Ref}
             className={`introText animate__animated ${isIntroText3Visible ? 'animate__duration-2s animate__fadeInUpBig' : 'hidden'}`}
           >
-            Head over to the <span id='projects'>Projects</span> section to explore my work. Connect with me on LinkedIn.
+            Head over to the
+
+            <Link
+              style={{cursor:'pointer',color: "wheat", borderBottom:'2px solid white', margin:'5px'}}
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+              activeClass="active"
+            >
+              Projects
+            </Link>
+
+            section to explore my work.
             I'm always eager for new challenges and opportunities to grow my skills. If you have a project that aligns with my expertise, reach out!
             Let's collaborate and build something amazing together.
           </p>

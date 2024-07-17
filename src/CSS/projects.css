@@ -1,6 +1,11 @@
+.projectsContainer{
+padding-top: 100px;
+}
 .projectsHeading{
-  padding: 50px 10px;
-  font-size: 50px;   
+   padding: 50px 10px; 
+   /* margin: 50px 10px; */
+  font-size: 45px;   
+  text-align:center;
   font-weight: 900; 
   color: white;
   font-family: Arial, sans-serif;
@@ -50,7 +55,7 @@
   background: #1e1e2a;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  height: 330px;
+  height: 350px;
 }
 
 .timeline-card.left {
@@ -142,11 +147,11 @@
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .card-back p, .card-back span {
-  font-size: 18px;
+  font-size: 20px;
   color: white;
   letter-spacing: 1px;
   word-spacing: 2px;

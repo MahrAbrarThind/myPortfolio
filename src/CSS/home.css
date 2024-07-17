@@ -80,10 +80,6 @@
 
 
 
-
-
-
-
 .buttons {
   /* margin-top: 10px; */
   display: flex;
@@ -92,7 +88,7 @@
 
 
 
-button {
+.button {
   cursor: pointer;
   --border-radius: 15px;
   --border-width: 4px;
@@ -108,7 +104,7 @@ button {
   z-index: 2;
 }
 
-button::after {
+.button::after {
   --m-i: linear-gradient(#000, #000);
   --m-o: content-box, padding-box;
   content: "";
@@ -138,7 +134,7 @@ button::after {
   animation-play-state: paused;
 }
 
-button:hover::after {
+.button:hover::after {
   animation-play-state: running;
 }
 
@@ -148,16 +144,16 @@ button:hover::after {
   }
 }
 
-button,
-button::after {
+.button,
+.button::after {
   box-sizing: border-box;
 }
 
-button:active {
+.button:active {
   --border-width: 6px;
 }
 
-button span {
+.button span {
   position: relative;
   display: flex;
   justify-content: center;
@@ -167,7 +163,7 @@ button span {
   overflow: hidden;
 }
 
-button span i {
+.button span i {
   font-size: 20px;
   /* Adjust icon size */
   transition: transform 0.5s ease-in-out;

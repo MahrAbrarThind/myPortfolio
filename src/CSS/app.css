@@ -1,10 +1,53 @@
- .wholeContainer{
+.wholeContainer {
     /* background-color: black; */
     /* background-color: #191f36; */
-    
-    background-color: #1a1a2e;
+
+    background-color: #110901;
+    /* background-color: rgb(39, 3, 3); */
+    /* background-color: rgb(56, 4, 4); */
 
     color: white;
     height: 100%;
-} 
- 
+}
+
+/* Scroll to Top Button Styles */
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    /* background-color: #7e00ff; */
+    background-color: rgb(248, 242, 242);
+    color: black;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.scrollToTopBtn i {
+    animation: moveUpDown 1s infinite;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+.scrollToTopBtn.show {
+    opacity: 1;
+}
+
+.scrollToTopBtn:hover {
+    color: white;
+    background-color: black;
+}
