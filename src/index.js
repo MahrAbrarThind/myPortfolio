@@ -10,6 +10,7 @@ import "./CSS/home.css";
 import "./CSS/about.css";
 import "./CSS/skills.css";
 import "./CSS/projects.css";
+import "./CSS/contact.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
